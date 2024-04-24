@@ -40,6 +40,10 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Buffer.cs" />
+        <Compile Include="Cursor.cs" />
+        <Compile Include="CursorMover.cs" />
+        <Compile Include="Editor.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
