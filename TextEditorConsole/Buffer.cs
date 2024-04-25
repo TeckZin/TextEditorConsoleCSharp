@@ -8,13 +8,18 @@ namespace TextEditorConsole
 {
     public class Buffer
     {
-        private List<string> lines; 
+        public List<string> lines { get; set; }
         public int row; 
         public Buffer(int row, string lines)
         {
             this.row = row;
             this.lines = lines.Split().ToList();
                 
+        }
+
+        public string Render()
+        {
+            return String.Join("", lines.ToArray());
         }
 
 

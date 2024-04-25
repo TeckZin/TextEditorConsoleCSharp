@@ -1,4 +1,6 @@
-﻿namespace TextEditorConsole
+﻿using System;
+
+namespace TextEditorConsole
 {
     public class Cursor
     {
@@ -32,12 +34,19 @@
 
         public bool moveCursorDown(int row)
         {
-            if (currY == row - 1) return false;
+            if (currY == row ) return false;
             currY++;
             return true;
         }
 
-    
+        public bool enterCursor()
+        {
+            currY ++;
+            currX = 0;
+            return true;
+        }
+
+          
 
         public bool moveCursorLeft()
         {
